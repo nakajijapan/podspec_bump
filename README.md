@@ -1,4 +1,4 @@
-[![Gem Version](https://github.com/nakajijapan/podspec_bump.png)](http://badge.fury.io/rb/podspec_bump)
+[![Gem Version](https://badge.fury.io/rb/podspec_bump.svg)](http://badge.fury.io/rb/podspec_bump)
 
 # PodspecBump
 
