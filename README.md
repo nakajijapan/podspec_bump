@@ -1,6 +1,9 @@
+[![Gem Version](https://github.com/nakajijapan/podspec_bump.png)](http://badge.fury.io/rb/podspec_bump)
+
 # PodspecBump
 
-TODO: Write a gem description
+A command line tools to bump podspec version for CocoaPods.
+Inspired [Bump](https://github.com/gregorym/bump)
 
 ## Installation
 
@@ -20,7 +23,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Curent version
+
+```
+bump current
+```
+
+Bump (major, minor, patch, pre)
+
+```
+bump patch
+```
 
 ## Contributing
 
