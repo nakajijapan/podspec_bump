@@ -27,13 +27,13 @@ Or install it yourself as:
 Curent version
 
 ```
-bump current
+podspec_bump current
 ```
 
 Bump (major, minor, patch, pre)
 
 ```
-bump patch
+podspec_bump patch
 ```
 
 ## Contributing
