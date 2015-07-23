@@ -35,10 +35,6 @@ Bump (major, minor, patch, pre)
 bump patch
 ```
 
-## Todo
-
-test...
-
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/podspec_bump/fork )
