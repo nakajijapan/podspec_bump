@@ -1,5 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/podspec_bump.svg)](http://badge.fury.io/rb/podspec_bump)
-[![wercker status](https://app.wercker.com/status/90ee9101067ce48b2c689f6b688baf91/s "wercker status")](https://app.wercker.com/project/bykey/90ee9101067ce48b2c689f6b688baf91)
+[![Build Status](https://travis-ci.org/nakajijapan/podspec_bump.svg)](https://travis-ci.org/nakajijapan/podspec_bump)
 
 # PodspecBump
 
