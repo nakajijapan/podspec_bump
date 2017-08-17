@@ -1,5 +1,4 @@
 require "podspec_bump/version"
-require 'colorize'
 
 module PodspecBump
   class InvalidOptionError < StandardError; end
@@ -15,16 +14,16 @@ module PodspecBump
       when *BUMPS
         bump_part(bump, options)
       when "current"
-        puts "Current version: #{version_from_file()}".colorize(:green)
+        puts "Current version: #{version_from_file()}"
       else
         raise InvalidOptionError
       end
     rescue InvalidOptionError
-      puts "Invalid option. Choose between #{OPTIONS.join(',')}.".colorize(:yellow)
+      puts "Invalid option. Choose between #{OPTIONS.join(',')}."
     rescue NotfoundSpecFileError
-      puts "Not found your spec file".colorize(:yellow)
+      puts "Not found your spec file"
     rescue Exception => e
-      puts "Something wrong happened: #{e.message}\n#{e.backtrace.join("\n")}".colorize(:yellow)
+      puts "Something wrong happened: #{e.message}\n#{e.backtrace.join("\n")}"
     end
 
     def self.bump(current, next_version, options)
@@ -45,7 +44,7 @@ module PodspecBump
     end
 
     def self.system_cmd(command)
-      puts command.colorize(:green)
+      puts command
       system command
     end
 
