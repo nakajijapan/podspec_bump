@@ -40,7 +40,7 @@ module PodspecBump
     def self.commit(version, options)
       return unless File.directory?(".git")
       system_cmd("git add --update #{spec_file()} && git commit -m 'v#{version}'")
-      system_cmd("git tag -a -m 'Bump to v#{version}' #{version}")
+      system_cmd("git tag -a -m 'Bump to v#{version}' v#{version}")
     end
 
     def self.system_cmd(command)
