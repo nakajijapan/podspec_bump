@@ -9,7 +9,15 @@ module PodspecBump
     OPTIONS       = BUMPS | ["current"]
     VERSION_REGEX = /(\d+\.\d+\.\d+)/
 
+    def self.defaults
+      {
+        :commit => true
+      }
+    end
+
     def self.run(bump, options={})
+      options = defaults.merge(options)
+      
       case bump
       when *BUMPS
         bump_part(bump, options)
@@ -28,7 +36,7 @@ module PodspecBump
 
     def self.bump(current, next_version, options)
       replace(current, next_version)
-      commit(next_version, options)
+      commit(next_version, options) if options[:commit]
       ["Bump version #{current} to #{next_version}", 0]
     end
 
