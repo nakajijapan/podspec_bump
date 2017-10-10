@@ -36,6 +36,14 @@ Bump (major, minor, patch, pre)
 podspec_bump patch
 ```
 
+### Options
+
+### --no-commit
+
+If you don't want to make a commit after bumping, add the `--no-commit` option.
+    
+    podspec_bump patch --no-commit
+
 ## Contributing
 
 1. Fork it ( https://github.com/nakajijapan/podspec_bump/fork )
